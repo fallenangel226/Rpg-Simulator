@@ -148,7 +148,7 @@ class Interface(Frame):
                              relief=RAISED, bd=3, activebackground="burlywood3", font=button_font,
                              command=lambda: load_game(self), state="disabled")
         exit_button = Button(control_button_frame, text="Exit\nGame", width=9, height=4, fg="white", bg="wheat4",
-                             relief=RAISED, bd=3, activebackground="burlywood3", font=button_font, command=exit())
+                             relief=RAISED, bd=3, activebackground="burlywood3", font=button_font, command=lambda: exit())
         new_button.grid(row=2, column=2)
         cont_button.grid(row=4, column=2)
         load_button.grid(row=6, column=2)
